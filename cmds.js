@@ -235,7 +235,7 @@ exports.playCmd = (socket, rl) => {
 	
 }; 
 
-exports.creditsCmd = rl => {
+exports.creditsCmd = (socket, rl) => {
 	log(socket, 'Quiz realizado por: ');
 	log(socket, 'Manuel Cano Rueda.');
 	rl.prompt();
