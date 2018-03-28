@@ -19,5 +19,14 @@
     "figlet": "^1.2.0",
     "sequelize": "^4.36.0",
     "sqlite3": "^3.1.13"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelcanorueda/P3_Quiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manuelcanorueda/P3_Quiz/issues"
+  },
+  "homepage": "https://github.com/manuelcanorueda/P3_Quiz#readme"
 }

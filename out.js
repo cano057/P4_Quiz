@@ -8,16 +8,16 @@ const colorize = (msg, color) => {
 	return msg;
 };
 
-const log = (msg,color) => {
-	console.log(colorize(msg, color));
+const log = (socket, msg, color) => {
+	socket.write(colorize(msg, color) + "\n");
 };
 
-const bigLog = (msg,color) => {
-	log(figlet.textSync(msg, {horizontalLayout: 'full'}), color);
+const bigLog = (socket, msg,color) => {
+	log(socket, figlet.textSync(msg, {horizontalLayout: 'full'}), color);
 };
 
-const errorlog = (msg) => {
-	console.log(`${colorize("Error", "red")}: ${colorize(colorize(msg, "red"), "bgYellowBright")}`);
+const errorlog = (socket, msg) => {
+	socket.write(`${colorize("Error", "red")}: ${colorize(colorize(msg, "red"), "bgYellowBright")}` + "\n");
 };
 
 exports = module.exports = {
